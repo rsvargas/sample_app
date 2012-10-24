@@ -29,14 +29,11 @@ describe "UserPages" do
         expect { click_button submit }.not_to change(User, :count)
       end
 
-      it "should have an error message" do
-        expect { click_button submit }.to have_selector "#error_explanation"
+      describe "after submission" do
+        before { click_button submit } 
+        it { should have_selector 'title', text: full_title('Sign up') }
+        it { should have_content 'error' }
       end
-
-#      describe "should have an error message" do
-#        before { click_button submit } 
-#        it { should have_selector "#error_explanation" }
-#      end
     end
 
     describe "with valid information" do
@@ -51,9 +48,13 @@ describe "UserPages" do
         expect { click_button submit }.to change(User, :count).by(1)
       end
       
-      it "should render the new user page" do
-        expect { click_button submit }.to have_selector "#gravatar"
-        expect { click_button submit }.to have_text "Example User" 
+      describe "after submission" do
+        before { click_button submit }
+        let(:user) { User.find_by_email('user@example.com') }
+        
+        it { should have_selector ".gravatar" }
+        it { should have_selector 'title', text: user.name }
+        it { should have_selector 'div.alert.alert-success', text: 'Welcome' } 
       end
     end
   end
