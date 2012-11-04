@@ -3,7 +3,7 @@ require 'spec_helper'
 describe ApplicationHelper do
   
   describe "full_title" do
-    it  "should includ  e the page title" do
+    it  "should include the page title" do
       full_title("foo").should =~ /foo/
     end
     
