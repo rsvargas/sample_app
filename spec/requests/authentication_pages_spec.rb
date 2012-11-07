@@ -10,6 +10,7 @@ describe "Authentication" do
     it { should have_selector 'title', text: 'Sign in' }
     it { should_not have_link 'Sign out' }
     it { should_not have_link 'Settings' }
+    it { should_not have_link 'Profile' }
   end
   
   shared_examples_for 'a plain sign in' do
@@ -51,7 +52,7 @@ describe "Authentication" do
       it_should_behave_like 'a plain sign in'
     end
   end
-
+  
   describe 'authorization' do
     
     describe 'for non-signed-in users' do
@@ -59,15 +60,13 @@ describe "Authentication" do
       
       describe 'when attempting to visit a protected page' do
         before do
-          visit edit_user_path(user)
-          fill_in 'Email',    with: user.email
-          fill_in 'Password', with: user.password
-          click_button 'Sign in'
+          visit users_path
+          sign_in user
         end
         
         describe 'after signing in' do
           it 'should render the desired protected page' do
-            page.should have_selector( 'title', text: 'Edit user' )  
+            page.should have_selector 'title', text: 'All users'  
           end
         end
         
@@ -77,6 +76,9 @@ describe "Authentication" do
           describe 'and in again' do
             before { sign_in user }
             it_should_behave_like 'a plain sign in'
+            it 'should have been redirected to the user profile' do
+              page.should have_selector 'title', text: user.name
+            end
           end
         end
       end
@@ -111,6 +113,24 @@ describe "Authentication" do
         
         describe 'submitting a PUT request to the Users#update action' do
           before { put user_path(wrong_user) }
+          specify { response.should redirect_to(root_path) }
+        end
+      end
+      
+    end
+    
+    describe 'for signed-in users' do
+      let(:user) { FactoryGirl.create(:user)}
+      before { sign_in user }
+      
+      describe 'trying to create a new user' do
+        describe 'accessing the Users#new action' do
+          before { get new_user_path }
+          specify { response.should redirect_to(root_path) }
+        end
+        
+        describe 'POSTing to the Users#create action' do
+          before { post users_path }
           specify { response.should redirect_to(root_path) }
         end
       end
