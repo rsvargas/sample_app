@@ -1,0 +1,103 @@
+1352514308
+About page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/static_pages_spec.rb	describe "About page" do
+AddAdminToUsers	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121106000326_add_admin_to_users.rb	class AddAdminToUsers 
+AddIndexToUsersEmail	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121014223048_add_index_to_users_email.rb	class AddIndexToUsersEmail 
+AddPasswordDigestToUsers	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121014224910_add_password_digest_to_users.rb	class AddPasswordDigestToUsers 
+AddRememberTokenToUsers	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121026012434_add_remember_token_to_users.rb	class AddRememberTokenToUsers 
+Application	C:/Users/Vargas/rails_projects/sample_app/config/application.rb	  class Application 
+ApplicationController	C:/Users/Vargas/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	C:/Users/Vargas/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
+Authentication	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "Authentication" do
+Contact page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/static_pages_spec.rb	describe "Contact page" do
+CreateMicroposts	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121110021018_create_microposts.rb	class CreateMicroposts 
+CreateUsers	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121009014144_create_users.rb	class CreateUsers 
+Help page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/static_pages_spec.rb	describe "Help page" do
+Home page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/static_pages_spec.rb	describe "Home page" do
+Micropost	C:/Users/Vargas/rails_projects/sample_app/app/models/micropost.rb	class Micropost 
+SampleApp	C:/Users/Vargas/rails_projects/sample_app/config/application.rb	module SampleApp
+SessionsController	C:/Users/Vargas/rails_projects/sample_app/app/controllers/sessions_controller.rb	class SessionsController 
+SessionsHelper	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	module SessionsHelper
+Sign in page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "Sign in page" do
+Static pages	C:/Users/Vargas/rails_projects/sample_app/spec/requests/static_pages_spec.rb	describe "Static pages" do
+StaticPagesController	C:/Users/Vargas/rails_projects/sample_app/app/controllers/static_pages_controller.rb	class StaticPagesController 
+StaticPagesHelper	C:/Users/Vargas/rails_projects/sample_app/app/helpers/static_pages_helper.rb	module StaticPagesHelper
+User	C:/Users/Vargas/rails_projects/sample_app/app/models/user.rb	class User 
+UserPages	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "UserPages" do
+UsersController	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	class UsersController 
+UsersHelper	C:/Users/Vargas/rails_projects/sample_app/app/helpers/users_helper.rb	module UsersHelper
+VALID_EMAIL_REGEX	C:/Users/Vargas/rails_projects/sample_app/app/models/user.rb	  VALID_EMAIL_REGEX =
+about	C:/Users/Vargas/rails_projects/sample_app/app/controllers/static_pages_controller.rb	  def about
+admin_user	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	    def admin_user
+after submission	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "after submission" do
+after submission	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "after submission" do
+after submission	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "after submission" do
+after visiting another page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "after visiting another page" do
+change	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121110021018_create_microposts.rb	  def change
+change	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121106000326_add_admin_to_users.rb	  def change
+change	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121026012434_add_remember_token_to_users.rb	  def change
+change	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121014224910_add_password_digest_to_users.rb	  def change
+change	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121014223048_add_index_to_users_email.rb	  def change
+change	C:/Users/Vargas/rails_projects/sample_app/db/migrate/20121009014144_create_users.rb	  def change
+correct_user	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	    def correct_user
+create	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def create
+create	C:/Users/Vargas/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def create
+create_remember_token	C:/Users/Vargas/rails_projects/sample_app/app/models/user.rb	    def create_remember_token
+current_user	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user
+current_user=	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user=(user)
+current_user?	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user?(user)
+destroy	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def destroy
+destroy	C:/Users/Vargas/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def destroy
+edit	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def edit
+email address with mixed case	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "email address with mixed case" do
+followed by a signout	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "followed by a signout" do
+full_title	C:/Users/Vargas/rails_projects/sample_app/spec/helpers/application_helper_spec.rb	describe "full_title" do
+full_title	C:/Users/Vargas/rails_projects/sample_app/app/helpers/application_helper.rb	  def full_title(page_title)
+gravatar_for	C:/Users/Vargas/rails_projects/sample_app/app/helpers/users_helper.rb	  def gravatar_for(user, options = { size: 50 } )
+help	C:/Users/Vargas/rails_projects/sample_app/app/controllers/static_pages_controller.rb	  def help
+home	C:/Users/Vargas/rails_projects/sample_app/app/controllers/static_pages_controller.rb	  def home
+index	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def index
+new	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def new
+new	C:/Users/Vargas/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def new
+non_signed_in_user	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	    def non_signed_in_user
+pagination	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "pagination" do
+profile page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "profile page" do
+redirect_back_or	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def redirect_back_or(default)
+remember_token	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "remember_token" do
+return value of authenticate method	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "return value of authenticate method" do
+should be invalid	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	it "should be invalid" do
+should be saved as all lowercase	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	it "should be saved as all lowercase" do
+should be valid	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	it "should be valid" do
+should create a user	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	it "should create a user" do
+should have the right links in the layout	C:/Users/Vargas/rails_projects/sample_app/spec/requests/static_pages_spec.rb	it "should have the right links in the layout" do
+should include the base title	C:/Users/Vargas/rails_projects/sample_app/spec/helpers/application_helper_spec.rb	it "should include the base title" do
+should include the page title	C:/Users/Vargas/rails_projects/sample_app/spec/helpers/application_helper_spec.rb	it  "should include the page title" do
+should not create a user	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	it "should not create a user" do
+should not include a bar for the home page	C:/Users/Vargas/rails_projects/sample_app/spec/helpers/application_helper_spec.rb	it "should not include a bar for the home page" do
+should not login	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	it "should not login" do
+show	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def show
+sign_in	C:/Users/Vargas/rails_projects/sample_app/spec/support/utilities.rb	def sign_in 
+sign_in	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def sign_in(user)
+sign_out	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def sign_out
+signed_in?	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def signed_in?
+signed_in_user	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	    def signed_in_user
+signin	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "signin" do
+signup	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "signup" do
+signup_page	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "signup_page" do
+store_location	C:/Users/Vargas/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def store_location
+update	C:/Users/Vargas/rails_projects/sample_app/app/controllers/users_controller.rb	  def update
+when email address is already taken	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when email address is already taken" do
+when email format is not valid	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when email format is not valid" do
+when email format is valid	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when email format is valid" do
+when email is not present	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when email is not present" do
+when name is not present	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when name is not present" do
+when name is too long	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when name is too long" do
+when passsword doesn't match confirmation	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when passsword doesn't match confirmation" do
+when password confirmation is nil	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when password confirmation is nil" do
+when password is not present	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when password is not present" do
+when the password is too short	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "when the password is too short" do
+with invalid information	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "with invalid information" do
+with invalid information	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "with invalid information" do
+with invalid password	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "with invalid password" do
+with valid information	C:/Users/Vargas/rails_projects/sample_app/spec/requests/user_pages_spec.rb	describe "with valid information" do
+with valid information	C:/Users/Vargas/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb	describe "with valid information" do
+with valid password	C:/Users/Vargas/rails_projects/sample_app/spec/models/user_spec.rb	describe "with valid password" do
