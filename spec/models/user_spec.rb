@@ -147,7 +147,7 @@ describe User do
       FactoryGirl.create(:micropost, user: @user, created_at: 1.day.ago)
     end
     let!(:newer_micropost) do
-      FactoryGirl.creeate(:micropost, user:@user, created_at: 1.hour.ago)
+      FactoryGirl.create(:micropost, user:@user, created_at: 1.hour.ago)
     end
     
     it 'should have the right microposts in the right order' do
@@ -157,7 +157,7 @@ describe User do
     it 'should destroy associated microposts' do
       microposts = @user.microposts.dup
       @user.destroy
-      microposts.should_not be_empry
+      microposts.should_not be_empty
       microposts.each do |micropost|
         Micropost.find_by_id(micropost.id).should be_nil
       end

@@ -1,6 +1,6 @@
 <% submit_label = submit_label || 'Submit' %>
 <%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', object: f.object %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
