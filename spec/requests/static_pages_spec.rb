@@ -35,6 +35,29 @@ describe "Static pages" do
     
     it_should_behave_like "all static pages"
     it { should_not have_selector 'title', text: "| Home" }
+    
+    describe 'for signed in users' do
+      let(:user) { FactoryGirl.create(:user)}
+      
+      
+      describe "user feed" do
+        before(:all) do
+          20.times { FactoryGirl.create(:micropost, user: user ) }
+          sign_in user
+          visit root_path
+        end
+        after(:all) { user.microposts.delete_all }
+  
+        it { should have_selector 'div.pagination' }
+  
+        it 'pagination' do
+          user.feed.paginate(page: 1).each do |item|
+            page.should have_selector("li##{item.id}", text: item.content)
+          end
+        end
+    end
+      
+    end
   end
   
   describe "Help page" do
