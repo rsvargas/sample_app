@@ -41,16 +41,23 @@ describe "Static pages" do
       
       
       describe "user feed" do
-        before(:all) do
-          20.times { FactoryGirl.create(:micropost, user: user ) }
+        before(:all) { 50.times { FactoryGirl.create(:micropost, user: user ) } }
+        after(:all) { user.microposts.delete_all }
+        
+        before(:each) do
           sign_in user
           visit root_path
         end
-        after(:all) { user.microposts.delete_all }
+        
+        it 'should have the correct micropost count' do
+          text = "#{user.microposts.count} micropost"
+          text += 's' if user.microposts.count != 1
+          should have_content(text)
+        end
   
         it { should have_selector 'div.pagination' }
   
-        it 'pagination' do
+        it 'should be paginated correctly' do
           user.feed.paginate(page: 1).each do |item|
             page.should have_selector("li##{item.id}", text: item.content)
           end
